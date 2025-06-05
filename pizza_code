@@ -1,0 +1,28 @@
+print("types of pizzas\n small pizza =100rs \n mediam pizza = 200rs \n large pizza = 300rs")
+bill=0
+pizza=input("what type of pizza you want? \n enter: (S/M/L) ")
+if pizza == 's' or pizza== 'S':
+    bill +=100
+    print("your pizza bill is 100rs")
+elif pizza=='m' or pizza=='M':
+    bill +=200
+    print("your pizza bill is 200rs")
+else:
+    bill +=300
+    print("your pizza bill is 300rs")
+    
+pepper=input("do u want any pepper? enter:(y/n)")    
+if pepper=='y' or pepper=='Y':
+    if pizza =='s' or pizza == 'S':
+        bill +=30
+       # print(f"your bill is {bill}")
+    else:
+        bill +=50
+       # print(f"your bill is {bill}")
+        
+chesse=input("do u want chesse? \n enter:(y/n)")
+if chesse=='y' or chesse=='Y':
+    bill +=20
+    print(f"your bill is {bill}")
+else:
+    print(f"your bill is {bill}")
